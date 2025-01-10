@@ -5,11 +5,13 @@ import os
 
 def load_strava_credentials():
 
-    config_path = os.path.join(os.path.dirname(__file__), "..", "config", "config.json")
 
-    with open(config_path, "r") as config_file:
-        config = json.load(config_file)
-    return config["strava"]
+    return {
+        "client_id": "144986",
+        "client_secret": "2e7837b1af58f0a4b0ee2d298b91386e510b1b7b",
+        "access_token": "07e2dd5d425570daab1719538e61c13afb64da6d",
+        "refresh_token": "ba30628ccb4d05be9ec696b5435f8b090e054c55"
+    }
 
 
 def refresh_access_token():
@@ -32,16 +34,9 @@ def refresh_access_token():
     if response.status_code == 200:
         token_data = response.json()
 
-        config_path = os.path.join(os.path.dirname(__file__), "..", "config", "config.json")
-        with open(config_path, "r") as config_file:
-            config = json.load(config_file)
 
-        # Update the config file with the new tokens
-        config["strava"]["access_token"] = token_data["access_token"]
-        config["strava"]["refresh_token"] = token_data["refresh_token"]
-
-        with open(config_path, "w") as config_file:
-            json.dump(config, config_file, indent=4)
+        credentials["access_token"] = token_data["access_token"]
+        credentials["refresh_token"] = token_data["refresh_token"]
 
         print("Access token successfully refreshed!")
         return token_data["access_token"]

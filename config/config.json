@@ -1,8 +1,8 @@
 {
     "strava": {
-        "client_id": "SEU_CLIENT_ID",
-        "client_secret": "SEU_CLIENT_SECRET",
-        "access_token": "SEU_ACCESS_TOKEN",
-        "refresh_token": "SEU_REFRESH_TOKEN"
+        "client_id": "144986",
+        "client_secret": "2e7837b1af58f0a4b0ee2d298b91386e510b1b7b",
+        "access_token": "07e2dd5d425570daab1719538e61c13afb64da6d",
+        "refresh_token": "ba30628ccb4d05be9ec696b5435f8b090e054c55"
     }
 }
