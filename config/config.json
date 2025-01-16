@@ -1,8 +1,9 @@
 {
-    "strava": {
-        "client_id": "144986",
-        "client_secret": "2e7837b1af58f0a4b0ee2d298b91386e510b1b7b",
-        "access_token": "07e2dd5d425570daab1719538e61c13afb64da6d",
-        "refresh_token": "ba30628ccb4d05be9ec696b5435f8b090e054c55"
-    }
+  "strava": {
+    "client_id": "144986",
+    "client_secret": "2e7837b1af58f0a4b0ee2d298b91386e510b1b7b",
+    "access_token": "41d40caf8c222293605c153ecbaf214308d711ca",
+    "refresh_token": "a6c3eb94a2f23bba10ae9cfd645485ee3fe72675",
+    "expires_at": 1737056525
+  }
 }
